@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_card"
+    android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeNews">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeContent"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello wrold"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tvHeading"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello wrold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tvHeading"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tvContent"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/relativeContent"
+            android:src="@drawable/news_user"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:id="@+id/ivNews"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeNews"
+        android:background="#edf0f7"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="News"
+            android:textSize="10sp"
+            android:id="@+id/tvlowerNews"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/likeheart"
+            android:id="@+id/ivLiker"
+            android:layout_toRightOf="@id/tvlowerNews"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Likes"
+            android:id="@+id/tvLikes"
+            android:textSize="10sp"
+            android:layout_toRightOf="@+id/ivLiker"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/cmment_bubble_outline"
+            android:id="@+id/ivComment"
+
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/tvLikes"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Comments"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivComment"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

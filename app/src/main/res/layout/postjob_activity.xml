@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:elevation="7dp">
+<RelativeLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="uiet.alumni.Activity.Home1Activity"
+    android:background="#edf0f7">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/three_bar_menu"
+                android:id="@+id/threebar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post Job"
+                android:layout_marginLeft="120dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"/>
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etJobTitle"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+
+        android:padding="10dp"
+        android:maxLines="1"
+        android:layout_below="@+id/appbar"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        android:hint="Title"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etJobOrganization"
+        android:layout_below="@+id/etJobTitle"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        android:hint="Organization"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etJobLocation"
+        android:layout_below="@+id/etJobOrganization"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        android:hint="Location"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etJobApply"
+        android:layout_below="@+id/etJobLocation"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        android:hint="How to Apply"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etJobExp"
+        android:layout_below="@+id/etJobApply"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        android:hint="Min Exp Req( In Years)"
+        android:inputType="number"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:focusableInTouchMode="false"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etJobCtc"
+        android:layout_below="@+id/etJobExp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        android:hint="CTC(LPA)"
+        android:inputType="number"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:focusableInTouchMode="false"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etJobOther"
+        android:layout_below="@+id/etJobCtc"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        android:hint="Other Details"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:focusableInTouchMode="false"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Job"
+        android:textAlignment="center"
+        android:id="@+id/buttonJobPost"
+        android:layout_below="@+id/etJobOther"/>
+
+
+
+
+
+
+</RelativeLayout>
+
+<android.support.v7.widget.RecyclerView
+android:id="@+id/rl_drawer"
+android:layout_width="320dp"
+android:layout_height="match_parent"
+android:layout_gravity="left"
+android:background="#e6e9f0"
+android:scrollbars="vertical" />
+
+    </android.support.v4.widget.DrawerLayout>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:elevation="7dp">
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="uiet.alumni.Activity.Home1Activity"
+    android:background="#edf0f7">
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/three_bar_menu"
+                android:id="@+id/threebar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alumni"
+                android:layout_marginLeft="120dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"/>
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivProfile"
+        android:src="@drawable/profile_icon"
+        android:layout_below="@+id/appbar"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivProfile"
+        android:layout_margin="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="First Name :"
+        android:textSize="20sp"
+        android:id="@+id/tvFirstHeading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivProfile"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:text="First Name"
+        android:textSize="20sp"
+        android:id="@+id/tvFirstDesc"
+        android:layout_toRightOf="@+id/tvFirstHeading" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFirstHeading"
+        android:layout_margin="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="Last Name :"
+        android:textSize="20sp"
+        android:id="@+id/tvLastHeading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFirstHeading"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:text="Last Name"
+        android:textSize="20sp"
+        android:id="@+id/tvLastDesc"
+        android:layout_toRightOf="@+id/tvLastHeading" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLastHeading"
+        android:layout_margin="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="Email :"
+        android:textSize="20sp"
+        android:id="@+id/tvEmailHeading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLastHeading"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:text="Email"
+        android:textSize="20sp"
+        android:id="@+id/tvEmailDesc"
+        android:layout_toRightOf="@+id/tvEmailHeading" />
+</RelativeLayout>
+<android.support.v7.widget.RecyclerView
+android:id="@+id/rl_drawer"
+android:layout_width="320dp"
+android:layout_height="match_parent"
+android:layout_gravity="left"
+android:background="#e6e9f0"
+android:scrollbars="vertical" />
+
+    </android.support.v4.widget.DrawerLayout>

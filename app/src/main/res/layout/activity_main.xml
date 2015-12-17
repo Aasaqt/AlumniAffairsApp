@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf0f7"
+    tools:context="com.flatabout.product.TutorialActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/viewPagerCountDots"
+        />
+
+    <LinearLayout
+        android:id="@+id/viewPagerCountDots"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_login"
+        android:orientation="horizontal"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/button_register"
+        android:layout_height="55dp"
+        android:text="LOG IN"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/button_register"
+        android:text="REGISTER"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

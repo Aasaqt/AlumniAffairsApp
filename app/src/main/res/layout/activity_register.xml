@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/etRegisterMail"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/register_mail"
+        android:hint="Email"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegisterPassword"
+        android:layout_below="@+id/etRegisterMail"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/register_password"
+        android:hint="Password"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegisterFirstName"
+        android:layout_below="@+id/etRegisterPassword"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/register_name"
+        android:hint="First Name"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegisterLastName"
+        android:layout_below="@+id/etRegisterFirstName"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/register_name"
+        android:hint="Last Name"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegisterDOB"
+        android:layout_below="@+id/etRegisterLastName"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/register_dob"
+        android:hint="Date of Birth"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"
+        android:focusableInTouchMode="false"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegisterClass"
+        android:layout_below="@+id/etRegisterDOB"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/register_batch"
+        android:hint="Select Class"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegisterProgram"
+        android:layout_below="@+id/etRegisterClass"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/register_batch"
+        android:hint="Select Program"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/butRegister"
+        android:layout_below="@+id/etRegisterProgram"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:text="REGISTER"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butRegister"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAlready"
+            android:text="Already Registered? Login"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Admin"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:id="@+id/tvAdmin"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
